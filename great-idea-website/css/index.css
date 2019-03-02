@@ -209,3 +209,38 @@ nav,
 .logo-container {
 	margin-left: 10%;
 }
+
+/**
+ * CTA section styles
+ */
+.cta-hero > div {
+	display: inline-block;
+	margin: -0.5rem;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	text-align: center;
+	vertical-align: middle;
+	width: 50%;
+}
+
+.cta-content h1 {
+	font-size: 5rem;
+	white-space: pre;
+}
+
+.cta-button {
+	padding: .5rem 2rem;
+}
+
+.cta-button:hover {
+	background: #000000;
+	color: #ffffff;
+}
+
+/**
+ * Main section styles
+ */
+main {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
