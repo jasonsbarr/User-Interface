@@ -66,7 +66,6 @@ table {
 html, body {
     height: 100%;
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -131,6 +130,10 @@ h1, h2, h3, h4, h5, h6 {
  * Rebuild basic element styles
  * Obviously not a FULL rebuild because of time and scope
  */
+html {
+	font-size: 100%;
+}
+
 header,
 main,
 footer,
@@ -159,7 +162,7 @@ button {
 	background: #ffffff;
 	border: 1px solid black;
 	cursor: pointer;
-	transition: all .2s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 button:hover {
@@ -186,6 +189,7 @@ nav,
 
 .nav-item {
 	display: inline-block;
+	font-size: 1.2rem;
 }
 
 .nav-item + .nav-item {
@@ -198,7 +202,9 @@ nav,
 }
 
 .nav-link:hover {
-	color: #888888;
+	border-bottom: 1px solid #666666;
+	color: #666666;
+	text-decoration: none;
 }
 
 .logo-container {
@@ -268,6 +274,37 @@ main .row + .row {
 }
 
 .legal-info {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+	html {
+		font-size: 85%;
+	}
+
+	#page-header,
+	.container {
+		max-width: 80rem;
+	}
+
+	.logo-container {
+		margin-left: 5%;
+	}
+
+	.cta-hero .cta-content {
+		margin-left: -1.5rem;
+	}
+
+	.cta-hero .cta-image {
+		margin-left: 1.5rem;
+	}
+
+	.cta-image img {
+		width: 80%;
+	}
+
+	.legal-info {
+		font-size: 1rem;
+	}
 }
