@@ -172,6 +172,12 @@ button:hover {
 /**
  * Header styles
  */
+.header-container {
+	background-color: #f1f5f5;
+	position: fixed;
+	top: 0;
+}
+
 #page-header {
 	margin: 0 auto;
 	max-width: 67.5rem;
@@ -214,6 +220,10 @@ nav,
 /**
  * CTA section styles
  */
+.container {
+	margin-top: 70px;
+}
+
 .cta-hero > div {
 	display: inline-block;
 	margin: -0.5rem;
@@ -230,7 +240,7 @@ nav,
 }
 
 .cta-button {
-	padding: .5rem 2rem;
+	padding: 1rem 3rem;
 }
 
 .cta-button:hover {
@@ -306,5 +316,41 @@ main .row + .row {
 
 	.legal-info {
 		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	header,
+	footer,
+	main,
+	section {
+		padding: 1rem 2rem;
+	}
+
+	.nav-item + .nav-item {
+		margin-left: 5%;
+	}
+}
+
+@media only screen and (max-width: 730px) {
+	html {
+		font-size: 70%
+	}
+
+	header,
+	footer,
+	main,
+	section {
+		padding: 0.5rem;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.logo-container {
+		display: block;
+		margin: 0 auto;
+		width: 183px;
 	}
 }
