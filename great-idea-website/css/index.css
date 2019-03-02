@@ -127,11 +127,6 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-header,
-.container {
-	border: 1px solid black;
-}
-
 /**
  * Rebuild basic element styles
  * Obviously not a FULL rebuild because of time and scope
@@ -223,6 +218,10 @@ nav,
 	width: 50%;
 }
 
+.cta-content {
+	transform: translateY(-3rem);
+}
+
 .cta-content h1 {
 	font-size: 5rem;
 	white-space: pre;
@@ -243,4 +242,35 @@ nav,
 main {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+main .row + .row {
+	margin-top: 1.5rem;
+}
+
+.blurb h2 {
+	font-size: 1.5rem;
+}
+
+.middle-img {
+	display: block;
+	margin: auto;
+}
+
+/**
+ * Footer styles
+ */
+#page-footer section {
+	padding: 1rem;
+}
+
+.contact-info a {
+	color: #333333;
+}
+
+.legal-info {
+	font-size: 0.8rem;
+	text-align: center;
 }
