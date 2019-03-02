@@ -86,13 +86,9 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-header,
 .container {
 	margin: 0 auto;
 	max-width: 67.5rem;
-}
-
-.container {
 	padding: 0;
 }
 
@@ -144,7 +140,7 @@ header,
 main,
 footer,
 section {
-	padding: 1.5rem 3rem;
+	padding: 1rem 3.5rem;
 }
 
 h1 {
@@ -178,8 +174,38 @@ button:hover {
 /**
  * Header styles
  */
+#page-header {
+	margin: 0 auto;
+	max-width: 67.5rem;
+}
+
+nav {
+	width: 66.6667%;
+}
+
 nav,
-.nav-item
 .logo-container {
 	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item + .nav-item {
+	margin-left: 8%;
+}
+
+.nav-link {
+	color: #b5b5b5;
+	transition: all .2s ease-in-out;
+}
+
+.nav-link:hover {
+	color: #888888;
+}
+
+.logo-container {
+	margin-left: 10%;
 }
