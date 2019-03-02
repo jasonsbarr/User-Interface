@@ -220,7 +220,7 @@ nav,
 
 .cta-content h1 {
 	font-size: 5rem;
-	white-space: pre;
+	white-space: pre-line;
 }
 
 .cta-button {
