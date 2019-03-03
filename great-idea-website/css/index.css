@@ -342,7 +342,7 @@ main .row + .row {
 		font-size: 70%
 	}
 
-	p {
+	.blurb {
 		font-size: 1.5rem;
 	}
 
@@ -501,5 +501,14 @@ main .row + .row {
 	.blurb h2 {
 		font-size: 2rem;
 		text-align: center;
+	}
+
+	.blurb address {
+		margin: 0 auto;
+		width: fit-content;
+	}
+
+	.legal-info small {
+		font-size: 1.2rem;
 	}
 }
